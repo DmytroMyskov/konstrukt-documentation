@@ -1,0 +1,153 @@
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-font: 'PT Sans', sans-serif;
+}
+
+
+body {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 28px;
+  margin: 0;
+
+  .container {
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 1200px;
+  }
+
+  li,
+  h2 {
+    font-family: 'Francois One', sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    letter-spacing: 1px;
+    line-height: 48px;
+    text-transform: uppercase;
+  }
+}
+
+header {
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  width: 1200px;
+  background: white;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+
+  a {
+    text-decoration: none;
+    font-family: 'Tourney', cursive;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+  }
+
+  :link,
+  :visited {
+    text-decoration: none;
+    color: black;
+  }
+
+  p {
+    font-family: 'Staatliches', cursive;
+    font-weight: 400;
+    font-size: 22px;
+    letter-spacing: 1px;
+  }
+
+  img {
+    margin-left: auto;
+  }
+}
+
+main {
+  display: flex;
+  gap: 30px;
+  margin-top: 70px;
+  background-image: url(./images/bg-picture.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 760px;
+  background-position: calc(100% - 315px) 100px;
+
+  aside {
+    position: sticky;
+    top: 10px;
+    box-sizing: border-box;
+    width: 385px;
+    height: 462px;
+    padding-top: 44px;
+
+    nav {
+
+      ul {
+        box-sizing: border-box;
+        width: 385px;
+        height: 462px;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          text-decoration: none;
+          padding-left: 10px;
+          margin-block: 10px 80px;
+          border-bottom: 1px solid #BDBDBD;
+
+          a {
+            text-decoration: none;
+            color: black;
+          }
+
+          :link,
+          :visited {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .content {
+
+    .title {
+      display: flex;
+      gap: 10px;
+      margin-block: 50px 20px;
+    }
+
+    h2 {
+      margin: 0;
+    }
+
+    sup {
+      font-family: 'Farro', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+    }
+
+    p {
+      margin: 0;
+      padding-block: 20px;
+    }
+
+    .underline {
+      text-decoration: underline;
+    }
+
+    .cursive {
+      font-style: italic;
+    }
+
+    .color {
+      background-color: #C9C9C9;
+    }
+  }
+}
