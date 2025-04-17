@@ -12,11 +12,39 @@ body {
   font-weight: 400;
   font-size: 28px;
   margin: 0;
+  background-image: url(./images/bg-picture.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 760px;
+  background-position: calc(100% - 315px) 100px;
 
   .container {
     margin: 0 auto;
     max-width: 1440px;
     width: 1200px;
+
+    header {
+      .switch {
+        display: flex;
+        gap: 10px;
+        align-items: baseline;
+
+        a,
+        span,
+        b {
+          font-family: 'Staatliches', cursive;
+          font-weight: 400;
+          font-size: 22px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          margin-block: 22px;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
   }
 
   li,
@@ -58,14 +86,6 @@ header {
     color: black;
   }
 
-  p {
-    font-family: 'Staatliches', cursive;
-    font-weight: 400;
-    font-size: 22px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-
   img {
     margin-left: auto;
   }
@@ -75,11 +95,6 @@ main {
   display: flex;
   gap: 30px;
   margin-top: 70px;
-  background-image: url(./images/bg-picture.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: 760px;
-  background-position: calc(100% - 315px) 100px;
 
   aside {
     position: sticky;
@@ -122,10 +137,17 @@ main {
 
   .content {
 
+    hr {
+      width: 100px;
+      height: 8px;
+      background-color: #000;
+      margin: 20px 0;
+    }
+
     .title {
       display: flex;
       gap: 10px;
-      margin-block: 50px 20px;
+      margin-block: 20px;
     }
 
     h2 {
@@ -145,6 +167,7 @@ main {
 
     .underline {
       text-decoration: underline;
+      cursor: pointer;
     }
 
     .cursive {
